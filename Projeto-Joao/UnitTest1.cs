@@ -12,16 +12,8 @@ namespace Projeto_Joao
         {
         }
 
-        [Test]
-        public void Test1()
-        {
-            IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://hom.eadtech.net/App/Student/User/Account/Login");
-
-            Thread.Sleep(5000);
-            driver.FindElement(By.Id("#frmLoginSubmit")).Click();
-            driver.Quit();
-        }
+  
+      
 
         [Test]
         public void TestComSucesso()
