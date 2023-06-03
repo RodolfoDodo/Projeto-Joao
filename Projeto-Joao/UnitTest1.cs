@@ -22,5 +22,16 @@ namespace Projeto_Joao
             driver.FindElement(By.Id("#frmLoginSubmit")).Click();
             driver.Quit();
         }
+
+        [Test]
+        public void Sucesso()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://hom.eadtech.net/App/Student/User/Account/Login");
+
+            Thread.Sleep(5000);
+            //driver.FindElement(By.Id("#frmLoginSubmit")).Click();
+            driver.Quit();
+        }
     }
 }
