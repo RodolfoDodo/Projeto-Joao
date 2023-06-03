@@ -19,6 +19,7 @@ namespace Projeto_Joao
             driver.Navigate().GoToUrl("https://hom.eadtech.net/App/Student/User/Account/Login");
 
             Thread.Sleep(5000);
+            driver.FindElement(By.Id("#frmLoginSubmit")).Click();
             driver.Quit();
         }
     }
